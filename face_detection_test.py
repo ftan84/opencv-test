@@ -13,12 +13,12 @@ face_cascade = cv2.CascadeClassifier(frontalface_location)
 # =====================================
 cap = cv2.VideoCapture('./videos/ttd-lgbt.mp4')
 out = cv2.VideoWriter('lgbt2.mp4', cv2.cv.CV_FOURCC('X', '2', '6', '4'), 30, (1280, 720))
-# =====================================================================
+# ===========================================
 # Main loop
 # - Iterate through each frame of video
 # - Detect face
 # - And draw a rectangle around detected face
-# =====================================================================
+# ===========================================
 counter = 0
 while True:
     counter += 1
@@ -34,7 +34,6 @@ while True:
         roi_color = frame[y:y+h, x:x+w]
     # Draw the frame with the rectangle back
     out.write(frame)
-
     # cv2.imshow('frame', frame)
     # if counter % 3 == 0:
     #     cv2.imshow('frame', frame)
