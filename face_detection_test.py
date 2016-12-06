@@ -11,6 +11,7 @@ face_cascade = cv2.CascadeClassifier(frontalface_location)
 # =====================================
 # Assign the source and the output file
 # =====================================
+# Use VideoCapture(0) if you want to use webcam
 cap = cv2.VideoCapture('./videos/ttd-lgbt.mp4')
 out = cv2.VideoWriter('lgbt2.mp4', cv2.cv.CV_FOURCC('X', '2', '6', '4'), 30, (1280, 720))
 # ===========================================
